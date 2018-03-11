@@ -12,6 +12,8 @@
 		2D04278D2055179C00C09024 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D04278B2055179C00C09024 /* Main.storyboard */; };
 		2D04278F2055179C00C09024 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D04278E2055179C00C09024 /* Assets.xcassets */; };
 		2D0427922055179C00C09024 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D0427902055179C00C09024 /* LaunchScreen.storyboard */; };
+		2D426BD5205534FE00A1CA8A /* ChooseSideController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D426BD4205534FE00A1CA8A /* ChooseSideController.swift */; };
+		2D426BD7205539B600A1CA8A /* ChooseSaberController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D426BD6205539B600A1CA8A /* ChooseSaberController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		2D04278E2055179C00C09024 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D0427912055179C00C09024 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D0427932055179C00C09024 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D426BD4205534FE00A1CA8A /* ChooseSideController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseSideController.swift; sourceTree = "<group>"; };
+		2D426BD6205539B600A1CA8A /* ChooseSaberController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseSaberController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,40 @@
 		2D0427862055179C00C09024 /* The Force */ = {
 			isa = PBXGroup;
 			children = (
-				2D0427872055179C00C09024 /* AppDelegate.swift */,
-				2D0427892055179C00C09024 /* ViewController.swift */,
-				2D04278B2055179C00C09024 /* Main.storyboard */,
-				2D04278E2055179C00C09024 /* Assets.xcassets */,
-				2D0427902055179C00C09024 /* LaunchScreen.storyboard */,
+				2D426BCF205530F700A1CA8A /* Controller */,
+				2D426BCE205530EC00A1CA8A /* View */,
+				2D426BD12055313A00A1CA8A /* Supporting Files */,
 				2D0427932055179C00C09024 /* Info.plist */,
 			);
 			path = "The Force";
+			sourceTree = "<group>";
+		};
+		2D426BCE205530EC00A1CA8A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2D04278B2055179C00C09024 /* Main.storyboard */,
+				2D0427902055179C00C09024 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2D426BCF205530F700A1CA8A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2D0427892055179C00C09024 /* ViewController.swift */,
+				2D426BD4205534FE00A1CA8A /* ChooseSideController.swift */,
+				2D426BD6205539B600A1CA8A /* ChooseSaberController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2D426BD12055313A00A1CA8A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2D0427872055179C00C09024 /* AppDelegate.swift */,
+				2D04278E2055179C00C09024 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +166,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D426BD7205539B600A1CA8A /* ChooseSaberController.swift in Sources */,
 				2D04278A2055179C00C09024 /* ViewController.swift in Sources */,
 				2D0427882055179C00C09024 /* AppDelegate.swift in Sources */,
+				2D426BD5205534FE00A1CA8A /* ChooseSideController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,11 +308,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "The Force/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.oz.The-Force";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -290,11 +323,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "The Force/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.oz.The-Force";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

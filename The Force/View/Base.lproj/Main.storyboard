@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Heavy</string>
+        </array>
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="The_Force" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="RvK-qo-Mkb">
+                                <rect key="frame" x="16" y="60" width="343" height="702"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DJ8-V1-nYT">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="351"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="iPC-Ic-cY4">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="351"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="iPC-Ic-cY4" firstAttribute="top" secondItem="DJ8-V1-nYT" secondAttribute="top" id="CK3-ia-r68"/>
+                                            <constraint firstAttribute="trailing" secondItem="iPC-Ic-cY4" secondAttribute="trailing" id="JSI-0u-LLL"/>
+                                            <constraint firstItem="iPC-Ic-cY4" firstAttribute="leading" secondItem="DJ8-V1-nYT" secondAttribute="leading" id="WTI-XW-VMh"/>
+                                            <constraint firstAttribute="bottom" secondItem="iPC-Ic-cY4" secondAttribute="bottom" id="Xhv-mZ-hSg"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j7Y-uZ-i6O">
+                                        <rect key="frame" x="0.0" y="351" width="343" height="351"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hOu-RQ-p4z">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="351"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahc-Nx-cen">
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="175.66666666666666"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WrG-le-9IN">
+                                                        <rect key="frame" x="0.0" y="175.66666666666663" width="343" height="175.33333333333337"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="40"/>
+                                                        <state key="normal" title="Choose Side">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="chooseButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hb3-O3-eDI"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="hOu-RQ-p4z" firstAttribute="leading" secondItem="j7Y-uZ-i6O" secondAttribute="leading" id="DhO-Rf-aKh"/>
+                                            <constraint firstAttribute="bottom" secondItem="hOu-RQ-p4z" secondAttribute="bottom" id="TYg-f9-Bi4"/>
+                                            <constraint firstAttribute="trailing" secondItem="hOu-RQ-p4z" secondAttribute="trailing" id="byz-Fe-FkU"/>
+                                            <constraint firstItem="hOu-RQ-p4z" firstAttribute="top" secondItem="j7Y-uZ-i6O" secondAttribute="top" id="k3y-ex-5gN"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RvK-qo-Mkb" secondAttribute="trailing" constant="16" id="CAv-2J-Zsh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RvK-qo-Mkb" secondAttribute="bottom" constant="16" id="W3w-k1-6V0"/>
+                            <constraint firstItem="RvK-qo-Mkb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="pmw-ub-Hvn"/>
+                            <constraint firstItem="RvK-qo-Mkb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="yXz-qY-pvf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="chooseButton" destination="WrG-le-9IN" id="JmW-IR-Zif"/>
+                        <outlet property="mainImageView" destination="iPC-Ic-cY4" id="BuG-cw-1c5"/>
+                        <outlet property="nameLabel" destination="Ahc-Nx-cen" id="nww-fL-DP6"/>
+                        <segue destination="VZo-Dr-YYD" kind="show" identifier="chooseSideController" id="LaJ-mV-Msz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="81" y="137"/>
+        </scene>
+        <!--Choose Side Controller-->
+        <scene sceneID="ilj-kq-5BW">
+            <objects>
+                <viewController id="VZo-Dr-YYD" customClass="ChooseSideController" customModule="The_Force" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0hy-st-9CG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="p5c-ds-CQA">
+                                <rect key="frame" x="0.0" y="44" width="375" height="600"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Your Side" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6u-fR-SFB">
+                                        <rect key="frame" x="52.666666666666657" y="0.0" width="270" height="200"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="30"/>
+                                        <color key="textColor" red="0.98468202352523804" green="0.91473174095153809" blue="0.32922309637069702" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRH-Yd-3SH">
+                                        <rect key="frame" x="87.666666666666686" y="200" width="200" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="I1z-02-LQn"/>
+                                            <constraint firstAttribute="width" constant="200" id="rlu-f5-WwX"/>
+                                        </constraints>
+                                        <state key="normal" image="imperial"/>
+                                        <connections>
+                                            <action selector="imperialTapped:" destination="VZo-Dr-YYD" eventType="touchUpInside" id="us4-RH-mkX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIH-Do-VRG">
+                                        <rect key="frame" x="87.666666666666686" y="400" width="200" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="9mg-tr-2TR"/>
+                                            <constraint firstAttribute="height" constant="200" id="szd-Nj-t62"/>
+                                        </constraints>
+                                        <state key="normal" image="rebel"/>
+                                        <connections>
+                                            <action selector="rebelTapped:" destination="VZo-Dr-YYD" eventType="touchUpInside" id="rBF-nz-PJ7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="p5c-ds-CQA" firstAttribute="top" secondItem="wLD-v8-Og2" secondAttribute="top" id="5CA-lZ-8mQ"/>
+                            <constraint firstItem="wLD-v8-Og2" firstAttribute="bottom" secondItem="p5c-ds-CQA" secondAttribute="bottom" id="MwA-Qj-Bhv"/>
+                            <constraint firstItem="p5c-ds-CQA" firstAttribute="leading" secondItem="wLD-v8-Og2" secondAttribute="leading" id="PUw-hi-her"/>
+                            <constraint firstItem="wLD-v8-Og2" firstAttribute="trailing" secondItem="p5c-ds-CQA" secondAttribute="trailing" id="fcj-Dd-R5x"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wLD-v8-Og2"/>
+                    </view>
+                    <connections>
+                        <segue destination="PZ0-Ef-Sgg" kind="show" identifier="chooseSaberController" id="AYf-2B-tpz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TT8-wl-Sug" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="991" y="137"/>
+        </scene>
+        <!--Choose Saber Controller-->
+        <scene sceneID="yDd-Af-4wJ">
+            <objects>
+                <viewController id="PZ0-Ef-Sgg" customClass="ChooseSaberController" customModule="The_Force" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AiJ-80-8ia">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose Your Saber" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weg-GA-8d9">
+                                <rect key="frame" x="41.174193548390122" y="66" width="291" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="30"/>
+                                <color key="textColor" red="0.9846820235" green="0.91473174099999999" blue="0.32922309640000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFQ-Cj-S6s">
+                                <rect key="frame" x="86.967741935487084" y="173" width="200" height="200.00000000000006"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="blue_saber"/>
+                                <connections>
+                                    <action selector="chooseSaberTapped:" destination="PZ0-Ef-Sgg" eventType="touchUpInside" id="kgc-UA-i8C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epg-4c-1td">
+                                <rect key="frame" x="86.380645161290431" y="544.99999999999977" width="199.99999999999955" height="200.0000000000004"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="green_saber"/>
+                                <connections>
+                                    <action selector="chooseSaberTapped:" destination="PZ0-Ef-Sgg" eventType="touchUpInside" id="MnA-qF-3XZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vkh-5j-qw7">
+                                <rect key="frame" x="86.380645161290431" y="344" width="199.99999999999977" height="200.00000000000003"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="red_saber"/>
+                                <connections>
+                                    <action selector="chooseSaberTapped:" destination="PZ0-Ef-Sgg" eventType="touchUpInside" id="XYa-wy-OOr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Gcr-jR-Cfm"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WNs-Cn-zWf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1838" y="180"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="blue_saber" width="507" height="350"/>
+        <image name="green_saber" width="178" height="178"/>
+        <image name="imperial" width="150" height="150"/>
+        <image name="logo" width="1000" height="427"/>
+        <image name="rebel" width="512" height="512"/>
+        <image name="red_saber" width="400" height="298"/>
+    </resources>
+</document>
